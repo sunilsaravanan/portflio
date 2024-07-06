@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+:root {
+  --primary-color: #fffefe;
+  --secondary-color: #212121;
+}
+
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
+}
+
+body {
+  width: 84%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  margin: auto;
+}
+
+nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#icon {
+  width: 30px;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+nav ul li a {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+
+nav ul li a:hover {
+  color: #f2345f;
+}
+
+.content {
+  margin-top: 15%;
+  margin-left: 7%;
+}
+
+.content h1 {
+  font-size: 70px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.content h1 span {
+  color: #f2345f;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.content a {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.content a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid #f2345f;
+}
+
+.img-box {
+  width: 45%;
+  height: 70%;
+  position: absolute;
+  top: 20%;
+  right: 100px;
+}
+
+.img-box img {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.5s, left 0.5s;
+}
+
+.img-box:hover .back-img {
+  bottom: 40px;
+}
+
+.img-box:hover .front-img {
+  left: 54%;
+}
+
+.social-links {
+  margin-left: 8%;
+  margin-top: 100px;
+}
+
+.social-links a {
+  font-size: 30px;
+  padding: 0 20px 0 0;
+  color: var(--secondary-color);
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.social-links a:hover {
+  position: relative;
+  top: 5px;
+  color: #f2345f;
+}
